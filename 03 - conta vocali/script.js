@@ -2,7 +2,21 @@
 
 const word = 'javascript';
 
+function contaVocali(stringa) {
+    const vocali = "aeiou";
+    let conteggio = 0;
+  
+    for (let i = 0; i < stringa.length; i++) {
+      if (vocali.includes(stringa[i])) {
+        conteggio++;
+      }
+    }
+  
+    return conteggio;
+  }
 
+  console.log(contaVocali(word));
+  
 // Dichiara la funzione qui.
 
 
